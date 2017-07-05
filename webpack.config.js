@@ -2,13 +2,13 @@ const path = require('path')
 
 const SOURCE_PATH = path.join(__dirname, '/app')
 const DISTRIBUTION_PATH = path.join(__dirname, '/dist')
-const FRAMER_PATH = path.join(__dirname, '/framer')
+const FRAMER_PATH = path.join(DISTRIBUTION_PATH, '/framer')
 
 module.exports = {
   entry: './app/index.js',
 
   output: {
-    path: DISTRIBUTION_PATH,
+    path: FRAMER_PATH,
     filename: 'framer.generated.js'
   },
 
